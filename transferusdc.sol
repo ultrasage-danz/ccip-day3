@@ -55,14 +55,15 @@ contract TransferUSDC is OwnerIsCreator {
     function transferUsdc(
         uint64 _destinationChainSelector,
         address _receiver,
-        uint256 _amount,
-        uint64 _gasLimit
+        uint256 _amount
+        
     )
         external
         onlyOwner
         onlyAllowlistedChain(_destinationChainSelector)
         returns (bytes32 messageId)
     {
+        uint256 newGasLimit = 26485;
         Client.EVMTokenAmount[]
             memory tokenAmounts = new Client.EVMTokenAmount[](1);
         Client.EVMTokenAmount memory tokenAmount = Client.EVMTokenAmount({
@@ -76,7 +77,7 @@ contract TransferUSDC is OwnerIsCreator {
             data: "",
             tokenAmounts: tokenAmounts,
             extraArgs: Client._argsToBytes(
-                Client.EVMExtraArgsV1({gasLimit: _gasLimit})
+                Client.EVMExtraArgsV1({gasLimit: newGasLimit})
             ),
             feeToken: address(i_linkToken)
         });

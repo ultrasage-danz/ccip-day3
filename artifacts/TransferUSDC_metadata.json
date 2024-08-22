@@ -219,11 +219,6 @@
 						"internalType": "uint256",
 						"name": "_amount",
 						"type": "uint256"
-					},
-					{
-						"internalType": "uint64",
-						"name": "_gasLimit",
-						"type": "uint64"
 					}
 				],
 				"name": "transferUsdc",
@@ -375,11 +370,11 @@
 			]
 		},
 		"transferusdc.sol": {
-			"keccak256": "0x8ce5e9c36938cc534eec8d206dbe859b6048fbdb9a047257d82aa89031f52a04",
+			"keccak256": "0x905cfb31459018696c4930d7e5c69238bb012343a3cf84d7ab0e7bbc80740f14",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://72766a67bc03674770b1ced9bded2657af14c3d8aefe0857c5b1d9fd8c028ce3",
-				"dweb:/ipfs/QmRes78YTAstW6n9QvVjfmpdsNYCWxHRHJnFonrwRXx37K"
+				"bzz-raw://e2caad810bc657da17c18fd976ab3e718c4138e8fc5878c24be88644ed97bea1",
+				"dweb:/ipfs/QmZ1q4jSmnrhFVuoRSuKUxWBaCKvmWE6Qmna8vdmHa3qq9"
 			]
 		}
 	},
